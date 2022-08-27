@@ -1,0 +1,33 @@
+/* ILLUSTRATOR page */
+
+.scroll-box {
+    overflow-x: scroll;
+    gap: 1px;
+}
+
+.scroll-box div {
+    width: 16.66vw;
+    transition: width 0.05s;
+}
+
+.scroll-box div:hover {
+    width: 41.66vw;
+}
+
+.scroll-box div:hover img {
+   max-height: unset;
+}
+
+/* --- MOBILE --- */
+
+@media (max-width: 600px) {
+
+
+    .scroll-box div:hover {
+        width: unset;
+    }
+    
+    .scroll-box div {
+        width: 66.66vw;
+    }
+}

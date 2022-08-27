@@ -1,0 +1,144 @@
+
+/* --- colors --- */
+
+:root {
+	--ciano: #23e0e9;
+    --soft-light: #fcfff7;
+    --nero: #26201d;
+}
+
+.bg-ciano {
+    background-color: var(--ciano);
+}
+
+.ciano {
+    color: var(--ciano);
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.white {
+    color: #fff;
+}
+
+.clear-blue {
+    color: #e7fffa;
+}
+
+.bg-black {
+    background-color: var(--nero);
+}
+
+.black {
+    color: var(--nero);
+}
+
+
+/* --- elements --- */
+
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+span:focus,
+div:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a.menu-link,
+a * {
+    cursor: pointer;
+}
+
+
+a:hover {
+    color: var(--ciano)
+}
+
+input[type="text"] {
+    border: 1px solid var(--nero);
+    padding: 0 1em;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: var(--ciano);
+}
+
+input:focus {
+    background-color: #fff;
+}
+
+/*  --- text --- */
+
+p {
+	margin: 0;
+	hyphens: auto;
+    font-family: 'orpheuspro', serif;
+    max-width: 95rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    font-weight: 300;
+}
+
+
+.font-big {
+    font-size: 248px;
+    line-height: 1;
+    font-family: 'orpheuspro', serif;
+}
+
+.font-medium {
+    font-size: 116px;
+    line-height: 1;
+    font-family: 'orpheuspro', serif;
+}
+
+.font-inter {
+    font-size: 48px;
+    line-height: 1.1;
+    font-family: 'orpheuspro', serif;
+}
+
+.font-base {
+    font-size: 22px;
+    line-height: 1;
+    font-family: 'orpheuspro', serif;
+}
+
+.font-small {
+    font-family: 'orpheuspro', serif;
+	font-size: 16px;
+}
+
+/* --- helper classes --- */
+
+@media screen and (max-width: 60em) {
+	.dn-s {
+		display: none;
+	}
+}
+
+
+.hide {
+    opacity: 0.5;
+    color: white;
+    text-shadow: 2px 2px 1px #f7f1e8;
+}

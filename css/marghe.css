@@ -1,0 +1,66 @@
+/* marghe page */
+
+.marghe input {
+    width: 33.33vw;
+}
+
+/* doors of moria */
+
+body.moria {
+    background-color: var(--nero);
+}
+
+.moria section.section-small,
+.moria section.section-main p:not(:first-child) {
+    display: none
+}
+
+.moria section.section-main p:first-child {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding-right: 0;
+}
+
+.moria section.section-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 16.66vw;
+}
+
+.moria section.section-main > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.moria section.section-main h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.moria input[type="text"] {
+    border-color: #fff;
+    color: var(--ciano);
+}
+
+/*  --- mobile --- */
+
+@media (max-width: 600px) {
+
+    .marghe input {
+        width: unset;
+        padding-left: 10px;
+    }
+
+    section.section-main p:first-child {
+        padding-bottom: 10px;
+    }
+
+    section.section-main div:first-of-type {
+        padding-bottom: 40px;
+    }
+
+}

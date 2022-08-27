@@ -1,0 +1,46 @@
+/* layout of big letters in HOME */
+
+.home section#s-m h1 {
+    left: 33.33vw;
+    transform: translate(-43%);
+    position: relative;
+}
+
+.home section#s-d h2 {
+    left: 50vw;
+    /* transform: translateX(-11.5%); */
+    transform: translate(-49%);
+    position: relative;
+}
+
+.home section#s-i h3 {
+    left: 41.66vw;
+    transform: translate(-43%);
+    position: relative;
+}
+
+.home section#s-p h3 {
+    left: 50vw;
+    transform: translate(-43%);
+    position: relative;
+}
+
+.home section#s-h h3 {
+    left: 50vw;
+    transform: translate(-44.6%);
+    position: relative;
+    text-align: right;
+}
+
+
+/* -- mobile -- */
+
+@media (max-width: 600px) {
+
+
+    .home section#s-m h1 {
+        transform: translate(-43.8%);
+    }
+
+
+}

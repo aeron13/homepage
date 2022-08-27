@@ -1,0 +1,205 @@
+/* layout */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: var(--soft-light);
+}
+
+.section-big,
+.section-medium,
+.section-small {
+    padding: 5px;
+    border-bottom: 1px solid var(--nero);
+}
+
+.section-big {
+    height: 238px;
+}
+
+.section-medium {
+    height: 119px;
+}
+
+.section-small {
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.scroller {
+    height: inherit;
+    width: max-content;
+}
+
+.scroller > * {
+    pointer-events: none;
+}
+
+/* elements */
+
+.title-c {
+    background-image: url(../img/C.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 40px;
+    position: relative;
+}
+
+.big-m {
+    background-image: url(../img/M.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 240px;
+    width: 390px;
+    max-width: 90vw;
+    position: absolute;
+    top: 219px;
+    left: 50vw;
+    transform: translateX(-50%);
+    pointer-events: none;
+    transition: opacity 0.25s;
+}
+
+/* - secondary pages */
+
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary-page .big-m {
+    background-image: url(../img/M-white.svg);
+    width: 83.33vw;
+    height: 80vh;
+    top: 7.5vh;
+    left: 8.33vw;
+    background-position: top;
+    transform: none;
+    z-index: -1;
+}
+
+.section-main {
+    padding-top: 20px;
+    gap: 20px;
+    padding-left: 10px;
+    flex-grow: 1;
+    border-bottom: 1px solid;
+}
+
+.section-main h1 {
+    margin-bottom: 1rem;
+}
+
+.section-main p {
+    padding-right: 8.33vw;
+}
+
+.section-main img {
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.secondary-page .font-anim {
+    position: relative;
+}
+
+.secondary-page section#s-m .font-anim {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* page transitions */
+
+
+main section {
+    transition: all 0.5s;
+}
+
+main.transition section {
+    transition: all 0.5s;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    min-height: unset;
+    flex-grow: unset;
+    padding: 5px !important;
+}
+
+main.transition section h1,
+main.transition section h2,
+main.transition section h3 {
+    left: 0 !important;
+    font-size: 22px;
+    transform: none !important;
+    color: var(--nero);
+    margin-bottom: 0;
+}
+
+main.transition section.section-main h1 span {
+    display: none;
+}
+
+
+
+main.transition section.section-main div,
+main.transition section p,
+main.transition section img,
+main.transition section.main-section div,
+main.transition audio {
+    display: none!important;
+}
+
+main.transition .big-m {
+    opacity: 0;
+}
+
+main.transition img {
+    display: none;
+}
+
+
+
+/* --- MOBILE --- */
+
+@media (max-width: 600px) {
+
+    .font-inter {
+        font-size: 30px;
+    }
+
+
+    .secondary-page .big-m {
+        max-width: unset;
+        width: 200vw;
+        display: none;
+    }
+
+    .section-main p {
+        min-width: 50vw;
+    }
+
+    .designer .section-main img {
+        display: none;
+    }
+
+    .designer .section-main .background {
+        min-height: 520px;
+        background-image: url(../img/milan.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 182%;
+    }
+
+}
+
