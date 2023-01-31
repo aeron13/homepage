@@ -3,4 +3,4 @@ A little play-around website about myself, made for CS50x "Introduction to Compu
 Includes page transitions and other visual effects.
 
 #### Year: 2022
-#### See it at: [https://aeron13.github.io/homepage/](aeron13.github.io/homepage)
+#### See it at: [aeron13.github.io/homepage](https://aeron13.github.io/homepage/)
